@@ -11,7 +11,13 @@ public class Controller {
 
     @GetMapping ("/Hello")
     public String hello (){
-        return "Hello World";
+
+        return "Hello new" + World();
+
+    }
+
+    public String World () {
+        return "World";
     }
 
 }
